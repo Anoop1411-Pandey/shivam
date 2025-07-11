@@ -1,0 +1,1888 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivam Eye Hospital - Your Vision is Our Mission</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            200: '#bfdbfe',
+                            300: '#93c5fd',
+                            400: '#60a5fa',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a',
+                        },
+                        blue: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            200: '#bfdbfe',
+                            300: '#93c5fd',
+                            400: '#60a5fa',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a',
+                        },
+                        dark: {
+                            50: '#f8fafc',
+                            100: '#f1f5f9',
+                            200: '#e2e8f0',
+                            300: '#cbd5e1',
+                            400: '#94a3b8',
+                            500: '#64748b',
+                            600: '#475569',
+                            700: '#334155',
+                            800: '#1e293b',
+                            900: '#0f172a',
+                        }
+                    },
+                    fontFamily: {
+                        heading: ['Montserrat', 'sans-serif'],
+                        body: ['Inter', 'sans-serif'],
+                        display: ['Poppins', 'sans-serif']
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 3s ease-in-out infinite',
+                        'bounce-slow': 'bounce 2s infinite',
+                        'fade-in': 'fadeIn 0.8s ease-out forwards',
+                        'slide-up': 'slideUp 0.6s ease-out forwards',
+                        'scale-in': 'scaleIn 0.5s ease-out forwards',
+                        'gradient': 'gradient 15s ease infinite',
+                        'logo-entrance': 'logoEntrance 2s ease-out forwards',
+                        'logo-float': 'logoFloat 4s ease-in-out infinite',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style type="text/css">
+        /* Enhanced Color Scheme and Dark Mode */
+        :root {
+            --primary-sky: #0ea5e9;
+            --primary-sky-dark: #0284c7;
+            --primary-sky-light: #38bdf8;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --bg-primary: #ffffff;
+            --bg-secondary: #f9fafb;
+        }
+
+        .dark {
+            --text-primary: #f9fafb;
+            --text-secondary: #d1d5db;
+            --bg-primary: #1f2937;
+            --bg-secondary: #111827;
+        }
+
+        /* Improved Typography Colors */
+        .text-primary {
+            color: var(--text-primary);
+        }
+
+        .text-secondary {
+            color: var(--text-secondary);
+        }
+
+        .bg-primary {
+            background-color: var(--bg-primary);
+        }
+
+        .bg-secondary {
+            background-color: var(--bg-secondary);
+        }
+
+        /* Enhanced Gradient Background */
+        .bg-gradient-animated {
+            background: linear-gradient(-45deg, #0c4a6e, #0ea5e9, #38bdf8, #7dd3fc);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+
+        /* Fixed Navbar */
+        .navbar-solid {
+            backdrop-filter: blur(20px);
+            background: rgba(255, 255, 255, 0.95);
+            border-bottom: 1px solid rgba(14, 165, 233, 0.1);
+        }
+
+        .dark .navbar-solid {
+            background: rgba(31, 41, 55, 0.95);
+            border-bottom: 1px solid rgba(56, 189, 248, 0.2);
+        }
+
+        /* Enhanced Button Styles */
+        .btn-glow {
+            background: linear-gradient(135deg, var(--primary-sky), var(--primary-sky-dark));
+            box-shadow: 0 4px 15px rgba(14, 165, 233, 0.3);
+            transition: all 0.3s ease;
+            color: white;
+            border: none;
+        }
+
+        .btn-glow:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(14, 165, 233, 0.5);
+            background: linear-gradient(135deg, var(--primary-sky-dark), var(--primary-sky));
+        }
+
+        /* Service Cards */
+        .service-card {
+            background: var(--bg-primary);
+            border: 1px solid rgba(14, 165, 233, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(14, 165, 233, 0.15);
+            border-color: rgba(14, 165, 233, 0.3);
+        }
+
+        .dark .service-card {
+            background: var(--bg-secondary);
+            border-color: rgba(56, 189, 248, 0.1);
+        }
+
+        .dark .service-card:hover {
+            border-color: rgba(56, 189, 248, 0.3);
+        }
+
+        /* Form Styling */
+        .form-input {
+            background: var(--bg-primary);
+            border: 1px solid #e5e7eb;
+            color: var(--text-primary);
+        }
+
+        .dark .form-input {
+            background: var(--bg-secondary);
+            border-color: #374151;
+            color: var(--text-primary);
+        }
+
+        .form-input:focus {
+            border-color: var(--primary-sky);
+            box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.1);
+        }
+
+        /* Floating Action Buttons */
+        .floating-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary-sky), var(--primary-sky-dark));
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 24px rgba(14, 165, 233, 0.3);
+            transition: all 0.3s ease;
+            z-index: 1000;
+            text-decoration: none;
+        }
+
+        .floating-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 30px rgba(14, 165, 233, 0.4);
+        }
+
+        .netra-chatbot {
+            bottom: 100px;
+        }
+
+        /* Responsive Design Improvements */
+        @media (max-width: 768px) {
+            .hero-section {
+                padding-top: 100px;
+            }
+            
+            .service-card {
+                margin-bottom: 1rem;
+            }
+        }
+
+        /* Section Spacing for Fixed Navbar */
+        section {
+            scroll-margin-top: 100px;
+        }
+
+        :root {
+            --gradient-1: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+            --gradient-2: linear-gradient(135deg, #38bdf8 0%, #0ea5e9 100%);
+            --gradient-3: linear-gradient(135deg, #7dd3fc 0%, #0ea5e9 100%);
+            --shadow-colored: 0 25px 50px -12px rgba(14, 165, 233, 0.25);
+            --shadow-dark: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+
+        /* World-Class Website Logo */
+        .website-logo {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #0c4a6e 0%, #0ea5e9 50%, #38bdf8 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10000;
+            opacity: 1;
+            visibility: visible;
+            transition: opacity 1s ease, visibility 1s ease;
+        }
+
+        .website-logo.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .logo-container {
+            text-align: center;
+            animation: logo-entrance 2s ease-out forwards;
+        }
+
+        .logo-main {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 20px;
+            position: relative;
+            animation: logo-float 4s ease-in-out infinite;
+        }
+
+        .logo-eye {
+            width: 100%;
+            height: 70px;
+            background: linear-gradient(135deg, #ffffff 0%, #e0f2fe 100%);
+            border-radius: 60px 60px 60px 60px / 35px 35px 35px 35px;
+            position: relative;
+            box-shadow: 
+                0 0 30px rgba(255, 255, 255, 0.8),
+                inset 0 3px 6px rgba(59, 130, 246, 0.2);
+            overflow: hidden;
+        }
+
+        .logo-eye::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+            animation: logo-scan 3s linear infinite;
+        }
+
+        .logo-iris {
+            width: 45px;
+            height: 45px;
+            background: radial-gradient(circle at 30% 30%, #ffffff 0%, #0ea5e9 30%, #0284c7 60%, #0c4a6e 100%);
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 
+                inset 0 0 15px rgba(0, 0, 0, 0.3),
+                0 0 20px rgba(14, 165, 233, 0.6);
+        }
+
+        .logo-pupil {
+            width: 20px;
+            height: 20px;
+            background: #000;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: logo-look 6s ease-in-out infinite;
+        }
+
+        .logo-highlight {
+            width: 8px;
+            height: 8px;
+            background: #fff;
+            border-radius: 50%;
+            position: absolute;
+            top: 25%;
+            left: 35%;
+            opacity: 0.95;
+        }
+
+        .logo-cross {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            width: 30px;
+            height: 30px;
+            background: linear-gradient(135deg, #ef4444, #dc2626);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+            box-shadow: 0 0 15px rgba(239, 68, 68, 0.5);
+        }
+
+        .logo-particles {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+        }
+
+        .logo-particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: #38bdf8;
+            border-radius: 50%;
+            animation: logo-particle-float 4s ease-in-out infinite;
+            box-shadow: 0 0 8px rgba(56, 189, 248, 0.8);
+        }
+
+        .logo-particle:nth-child(1) {
+            top: 10%;
+            left: 20%;
+            animation-delay: 0s;
+        }
+
+        .logo-particle:nth-child(2) {
+            top: 20%;
+            right: 15%;
+            animation-delay: 1s;
+        }
+
+        .logo-particle:nth-child(3) {
+            bottom: 15%;
+            left: 25%;
+            animation-delay: 2s;
+        }
+
+        .logo-particle:nth-child(4) {
+            bottom: 25%;
+            right: 20%;
+            animation-delay: 3s;
+        }
+
+        .logo-text {
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        }
+
+        .logo-tagline {
+            color: rgba(255, 255, 255, 0.9);
+            font-family: 'Inter', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        /* Logo Animations */
+        @keyframes logoEntrance {
+            0% { 
+                opacity: 0; 
+                transform: scale(0.5) translateY(100px); 
+            }
+            50% { 
+                opacity: 1; 
+                transform: scale(1.1) translateY(-20px); 
+            }
+            100% { 
+                opacity: 1; 
+                transform: scale(1) translateY(0); 
+            }
+        }
+
+        @keyframes logoFloat {
+            0%, 100% { 
+                transform: translateY(0px) rotate(0deg); 
+            }
+            25% { 
+                transform: translateY(-10px) rotate(1deg); 
+            }
+            75% { 
+                transform: translateY(-5px) rotate(-1deg); 
+            }
+        }
+
+        @keyframes logo-scan {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+
+        @keyframes logo-look {
+            0%, 100% { transform: translate(-50%, -50%); }
+            25% { transform: translate(-35%, -50%); }
+            75% { transform: translate(-65%, -50%); }
+        }
+
+        @keyframes logo-particle-float {
+            0%, 100% { 
+                transform: translateY(0px) scale(1); 
+                opacity: 0.7; 
+            }
+            50% { 
+                transform: translateY(-20px) scale(1.3); 
+                opacity: 1; 
+            }
+        }
+
+        /* Updated Blue Color Scheme */
+        .bg-gradient-animated {
+            background: linear-gradient(-45deg, #1e3a8a, #3b82f6, #60a5fa, #93c5fd);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+
+        /* Updated AI Eye Logo with Blue Theme */
+        .ai-eye-outer {
+            background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 50%, #93c5fd 100%);
+            box-shadow: 
+                0 0 20px rgba(59, 130, 246, 0.4),
+                inset 0 2px 4px rgba(255, 255, 255, 0.3);
+        }
+
+        .ai-eye-iris {
+            background: radial-gradient(circle at 30% 30%, #ffffff 0%, #93c5fd 30%, #3b82f6 60%, #1e3a8a 100%);
+            box-shadow: 
+                inset 0 0 8px rgba(0, 0, 0, 0.3),
+                0 0 10px rgba(147, 197, 253, 0.5);
+        }
+
+        .dark .ai-eye-outer {
+            background: linear-gradient(135deg, #93c5fd 0%, #60a5fa 50%, #3b82f6 100%);
+            box-shadow: 
+                0 0 25px rgba(147, 197, 253, 0.6),
+                inset 0 2px 4px rgba(255, 255, 255, 0.2);
+        }
+
+        .dark .ai-eye-iris {
+            background: radial-gradient(circle at 30% 30%, #ffffff 0%, #60a5fa 30%, #93c5fd 60%, #1e40af 100%);
+            box-shadow: 
+                inset 0 0 8px rgba(0, 0, 0, 0.4),
+                0 0 15px rgba(96, 165, 250, 0.7);
+        }
+
+        /* Updated Medical Eye Logo */
+        .medical-eye-outer {
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 50%, #1d4ed8 100%);
+            box-shadow: 
+                0 0 20px rgba(59, 130, 246, 0.4),
+                inset 0 2px 4px rgba(255, 255, 255, 0.3);
+        }
+
+        .medical-eye-iris {
+            background: radial-gradient(circle at 30% 30%, #ffffff 0%, #3b82f6 30%, #2563eb 60%, #1e3a8a 100%);
+            box-shadow: 
+                inset 0 0 8px rgba(0, 0, 0, 0.3),
+                0 0 10px rgba(59, 130, 246, 0.5);
+        }
+
+        /* Missing Button Styles */
+        .btn-glow {
+            background: linear-gradient(135deg, #3b82f6, #60a5fa);
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .btn-glow:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.5);
+        }
+
+        .hero-btn-primary {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            border: none;
+        }
+
+        .phone-btn {
+            background: linear-gradient(135deg, #60a5fa, #3b82f6);
+        }
+
+        .map-direction-btn {
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
+        }
+
+        /* Service Card Hover Effect */
+        .service-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .dark .service-card {
+            background: rgba(15, 23, 42, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .dark .service-card:hover {
+            background: rgba(15, 23, 42, 0.8);
+        }
+
+        /* Content positioning */
+        .content {
+            position: relative;
+            z-index: 10;
+        }
+
+        /* Fix positioning issues */
+        section {
+            position: relative;
+            overflow: hidden;
+            scroll-margin-top: 80px;
+        }
+
+        section .bg-gradient-animated {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6, #60a5fa, #93c5fd);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        /* Hero Section */
+        #home {
+            position: relative;
+            overflow: hidden;
+        }
+
+        #home .bg-gradient-animated {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6, #60a5fa, #93c5fd);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+
+        /* About Section */
+        #about {
+            position: relative;
+            overflow: hidden;
+        }
+
+        #about .bg-gradient-animated {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6, #60a5fa, #93c5fd);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+
+        /* Services Section */
+        #services {
+            position: relative;
+            overflow: hidden;
+        }
+
+        #services .bg-gradient-animated {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6, #60a5fa, #93c5fd);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+
+        /* Location Section */
+        #location {
+            position: relative;
+            overflow: hidden;
+        }
+
+        #location .bg-gradient-animated {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6, #60a5fa, #93c5fd);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+
+        /* Contact Section */
+        #contact {
+            position: relative;
+            overflow: hidden;
+        }
+
+        #contact .bg-gradient-animated {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6, #60a5fa, #93c5fd);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+
+        /* Footer Section */
+        footer {
+            position: relative;
+            overflow: hidden;
+        }
+
+        footer .bg-gradient-animated {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6, #60a5fa, #93c5fd);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+
+        /* Floating Action Buttons */
+        .floating-btn {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .floating-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Chatbot Button */
+        .netra-chatbot {
+            position: fixed;
+            bottom: 120px;
+            right: 20px;
+            z-index: 1000;
+            background: linear-gradient(135deg, #8b5cf6, #a855f7);
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 8px 32px rgba(139, 92, 246, 0.3);
+            transition: all 0.3s ease;
+            animation: chatbot-float 3s ease-in-out infinite;
+        }
+
+        .netra-chatbot:hover {
+            transform: scale(1.1);
+            box-shadow: 0 12px 40px rgba(139, 92, 246, 0.4);
+        }
+
+        .netra-icon {
+            position: relative;
+            width: 30px;
+            height: 30px;
+            color: white;
+        }
+
+        .netra-pulse {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            width: 20px;
+            height: 20px;
+            background: #ef4444;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        .netra-pulse::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 8px;
+            height: 8px;
+            background: white;
+            border-radius: 50%;
+        }
+
+        @keyframes chatbot-float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        @keyframes medical-pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        @keyframes medical-scan {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+    </style>
+</head>
+
+<body class="font-body bg-gray-50 dark:bg-dark-900 transition-colors duration-300">
+    <!-- Website Logo Splash Screen -->
+    <div class="website-logo" id="websiteLogo">
+        <div class="logo-container">
+            <div class="logo-main">
+                <div class="logo-eye">
+                    <div class="logo-iris">
+                        <div class="logo-pupil">
+                            <div class="logo-highlight"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo-cross">
+                    <i class="fas fa-plus"></i>
+                </div>
+                <div class="logo-particles">
+                    <div class="logo-particle"></div>
+                    <div class="logo-particle"></div>
+                    <div class="logo-particle"></div>
+                    <div class="logo-particle"></div>
+                </div>
+            </div>
+            <h1 class="logo-text">SHIVAM EYE HOSPITAL</h1>
+            <p class="logo-tagline">Your Vision is Our Mission</p>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar-solid bg-white dark:bg-dark-800 transition-all duration-300 fixed w-full top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <!-- Logo for Navbar (smaller version) -->
+                    <div class="hidden lg:block">
+                        <a href="#home" class="flex items-center">
+                            <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-blue-500 to-purple-500 flex items-center justify-center mr-3">
+                                <i class="fas fa-eye text-white text-xl"></i>
+                            </div>
+                            <span class="text-2xl font-extrabold text-gray-800 dark:text-white">Shivam Eye Hospital</span>
+                        </a>
+                    </div>
+                    <div class="block lg:hidden">
+                        <a href="#home" class="flex items-center">
+                            <div class="w-8 h-8 rounded-full bg-gradient-to-tr from-blue-500 to-purple-500 flex items-center justify-center mr-2">
+                                <i class="fas fa-eye text-white text-lg"></i>
+                            </div>
+                            <span class="text-xl font-extrabold text-gray-800 dark:text-white">Shivam Eye</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex flex-grow items-center justify-center space-x-10">
+                    <a href="#home" class="nav-link text-gray-800 dark:text-white font-semibold py-2 px-4 rounded-lg transition-all duration-300 hover:text-sky-500">
+                        Home
+                    </a>
+                    <a href="#about" class="nav-link text-gray-800 dark:text-white font-semibold py-2 px-4 rounded-lg transition-all duration-300 hover:text-sky-500">
+                        About
+                    </a>
+                    <a href="#services" class="nav-link text-gray-800 dark:text-white font-semibold py-2 px-4 rounded-lg transition-all duration-300 hover:text-sky-500">
+                        Services
+                    </a>
+                    <a href="#location" class="nav-link text-gray-800 dark:text-white font-semibold py-2 px-4 rounded-lg transition-all duration-300 hover:text-sky-500">
+                        Location
+                    </a>
+                    <a href="#contact" class="nav-link text-gray-800 dark:text-white font-semibold py-2 px-4 rounded-lg transition-all duration-300 hover:text-sky-500">
+                        Contact
+                    </a>
+                    
+                    <!-- Theme Toggle Button -->
+                    <button id="theme-toggle" class="flex items-center justify-center p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors ml-4">
+                        <i id="theme-icon-light" class="fas fa-moon text-gray-700 dark:text-gray-300"></i>
+                        <i id="theme-icon-dark" class="fas fa-sun text-yellow-500 hidden"></i>
+                    </button>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden">
+                    <button id="mobile-menu-toggle" class="text-gray-800 dark:text-white focus:outline-none">
+                        <i class="fas fa-bars fa-lg"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden fixed top-0 left-0 w-full h-full bg-white dark:bg-dark-800 z-50">
+        <div class="flex justify-end p-4">
+            <button id="mobile-menu-close" class="text-gray-800 dark:text-white">
+                <i class="fas fa-times fa-lg"></i>
+            </button>
+        </div>
+        <div class="flex flex-col items-center justify-center h-full space-y-8">
+            <a href="#home" class="nav-link text-gray-800 dark:text-white font-semibold text-2xl transition-all duration-300">
+                Home
+            </a>
+            <a href="#about" class="nav-link text-gray-800 dark:text-white font-semibold text-2xl transition-all duration-300">
+                About
+            </a>
+            <a href="#services" class="nav-link text-gray-800 dark:text-white font-semibold text-2xl transition-all duration-300">
+                Services
+            </a>
+            <a href="#location" class="nav-link text-gray-800 dark:text-white font-semibold text-2xl transition-all duration-300">
+                Location
+            </a>
+            <a href="#contact" class="nav-link text-gray-800 dark:text-white font-semibold text-2xl transition-all duration-300">
+                Contact
+            </a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen pt-20">
+        <div class="bg-gradient-animated absolute inset-0 z-0"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10">
+            <div class="flex flex-col-reverse lg:flex-row items-center justify-center min-h-[80vh]">
+                <div class="w-full lg:w-1/2 text-white">
+                    <h1 class="text-4xl md:text-6xl font-display font-black mb-4 leading-tight">
+                        Your Vision is Our <span class="text-sky-300">Mission</span>
+                    </h1>
+                    <p class="text-lg md:text-xl mb-6">
+                        At Shivam Eye Hospital, we provide comprehensive eye care services using the latest technology and techniques. Our team of experienced ophthalmologists is dedicated to protecting and enhancing your vision.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#services" class="btn-glow bg-sky-500 text-white py-3 px-6 rounded-lg font-semibold transition-all duration-300">
+                            <i class="fas fa-concierge-bell mr-2"></i> Our Services
+                        </a>
+                        <a href="tel:+919327458102" class="phone-btn bg-sky-400 text-white py-3 px-6 rounded-lg font-semibold transition-all duration-300">
+                            <i class="fas fa-phone-alt mr-2"></i> Call Now
+                        </a>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 mb-8 lg:mb-0">
+                    <div class="flex justify-center">
+                        <!-- Enhanced Eye Logo Animation -->
+                        <div class="eye-logo">
+                            <div class="eye-outer bg-gradient-to-tr from-sky-500 to-sky-600 rounded-full w-28 h-28 flex items-center justify-center relative overflow-hidden animate-pulse">
+                                <div class="eye-inner rounded-full w-8 h-8 flex items-center justify-center relative">
+                                    <div class="absolute inset-0 rounded-full bg-gradient-to-tr from-sky-300 to-sky-400 opacity-75"></div>
+                                    <div class="absolute inset-0 rounded-full bg-gradient-to-tr from-sky-500 to-sky-600 opacity-50 animate-ping"></div>
+                                    <div class="w-2 h-2 rounded-full bg-white"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gradient-to-br from-sky-50 to-sky-100 dark:from-slate-800 dark:to-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-display font-bold mb-4 text-slate-800 dark:text-white">
+                    About Us
+                </h2>
+                <p class="text-lg text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
+                    Shivam Eye Hospital is a leading eye care provider in Ahmedabad, dedicated to offering advanced and personalized eye care solutions with experienced ophthalmologists.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white/70 dark:bg-slate-700/70 backdrop-blur-sm rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gradient-to-r from-sky-400 to-sky-500 flex items-center justify-center mr-4 shadow-lg">
+                            <i class="fas fa-user-md text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-slate-800 dark:text-white">Experienced Doctors</h3>
+                            <p class="text-sm text-slate-600 dark:text-slate-300">Highly qualified ophthalmologists</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white/70 dark:bg-slate-700/70 backdrop-blur-sm rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gradient-to-r from-sky-400 to-sky-500 flex items-center justify-center mr-4 shadow-lg">
+                            <i class="fas fa-laptop-medical text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-slate-800 dark:text-white">Advanced Technology</h3>
+                            <p class="text-sm text-slate-600 dark:text-slate-300">Latest diagnostic equipment</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white/70 dark:bg-slate-700/70 backdrop-blur-sm rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gradient-to-r from-sky-400 to-sky-500 flex items-center justify-center mr-4 shadow-lg">
+                            <i class="fas fa-award text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-slate-800 dark:text-white">Quality Care</h3>
+                            <p class="text-sm text-slate-600 dark:text-slate-300">Highest standards of care</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white/70 dark:bg-slate-700/70 backdrop-blur-sm rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gradient-to-r from-sky-400 to-sky-500 flex items-center justify-center mr-4 shadow-lg">
+                            <i class="fas fa-comments text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-slate-800 dark:text-white">Patient Education</h3>
+                            <p class="text-sm text-slate-600 dark:text-slate-300">Comprehensive health guidance</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white/70 dark:bg-slate-700/70 backdrop-blur-sm rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gradient-to-r from-sky-400 to-sky-500 flex items-center justify-center mr-4 shadow-lg">
+                            <i class="fas fa-calendar-alt text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-slate-800 dark:text-white">Flexible Appointments</h3>
+                            <p class="text-sm text-slate-600 dark:text-slate-300">Convenient scheduling options</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white/70 dark:bg-slate-700/70 backdrop-blur-sm rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gradient-to-r from-sky-400 to-sky-500 flex items-center justify-center mr-4 shadow-lg">
+                            <i class="fas fa-map-marker-alt text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-slate-800 dark:text-white">Convenient Location</h3>
+                            <p class="text-sm text-slate-600 dark:text-slate-300">Easy access in Ranip, Ahmedabad</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50 dark:bg-dark-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-display font-black mb-4 text-gray-800 dark:text-white">
+                    Our Services
+                </h2>
+                <p class="text-lg md:text-xl text-gray-700 dark:text-gray-300">
+                    We offer a wide range of eye care services to meet the needs of our patients. Our services include:
+                </p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="service-card p-6 rounded-lg shadow-lg transition-transform transform hover:-translate-y-2">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-sky-500 flex items-center justify-center mr-4">
+                            <i class="fas fa-eye text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Comprehensive Eye Exams</h3>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">
+                        Detailed eye examinations using advanced diagnostic equipment to assess your eye health. Our comprehensive exams include visual acuity testing, refraction assessment, intraocular pressure measurement, and retinal examination to detect early signs of eye diseases.
+                    </p>
+                    <div class="text-sm text-sky-600 dark:text-sky-400">
+                        <p><strong>Duration:</strong> 45-60 minutes</p>
+                        <p><strong>Includes:</strong> Vision screening, glaucoma testing, retinal photography</p>
+                    </div>
+                </div>
+                <div class="service-card p-6 rounded-lg shadow-lg transition-transform transform hover:-translate-y-2">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-sky-500 flex items-center justify-center mr-4">
+                            <i class="fas fa-sight text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Cataract Surgery</h3>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">
+                        Safe and effective cataract surgery using the latest phacoemulsification technology. We use premium intraocular lenses to restore clear vision and reduce dependence on glasses after surgery.
+                    </p>
+                    <div class="text-sm text-sky-600 dark:text-sky-400">
+                        <p><strong>Technique:</strong> Micro-incision phacoemulsification</p>
+                        <p><strong>Recovery:</strong> 2-4 weeks</p>
+                        <p><strong>Success Rate:</strong> 98%+</p>
+                    </div>
+                </div>
+                <div class="service-card p-6 rounded-lg shadow-lg transition-transform transform hover:-translate-y-2">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-sky-500 flex items-center justify-center mr-4">
+                            <i class="fas fa-laser text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Laser Eye Surgery</h3>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">
+                        Advanced laser treatments for various eye conditions, including LASIK for refractive errors. Our state-of-the-art laser technology provides precise corneal reshaping for improved vision.
+                    </p>
+                    <div class="text-sm text-sky-600 dark:text-sky-400">
+                        <p><strong>Types:</strong> LASIK, PRK, SMILE</p>
+                        <p><strong>Procedure Time:</strong> 15-30 minutes</p>
+                        <p><strong>Vision Improvement:</strong> Within 24-48 hours</p>
+                    </div>
+                </div>
+                <div class="service-card p-6 rounded-lg shadow-lg transition-transform transform hover:-translate-y-2">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-sky-500 flex items-center justify-center mr-4">
+                            <i class="fas fa-eye-dropper text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Glaucoma Management</h3>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">
+                        Comprehensive care for glaucoma, including medical management and surgical options. Early detection and treatment are crucial for preserving vision and preventing irreversible damage.
+                    </p>
+                    <div class="text-sm text-sky-600 dark:text-sky-400">
+                        <p><strong>Treatments:</strong> Eye drops, laser therapy, surgery</p>
+                        <p><strong>Monitoring:</strong> Regular pressure checks</p>
+                        <p><strong>Prevention:</strong> Early detection programs</p>
+                    </div>
+                </div>
+                <div class="service-card p-6 rounded-lg shadow-lg transition-transform transform hover:-translate-y-2">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-sky-500 flex items-center justify-center mr-4">
+                            <i class="fas fa-user-md text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Pediatric Eye Care</h3>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">
+                        Specialized eye care services for children, including routine exams and treatment of eye conditions. Our child-friendly approach ensures comfortable and thorough eye care for young patients.
+                    </p>
+                    <div class="text-sm text-sky-600 dark:text-sky-400">
+                        <p><strong>Age Range:</strong> Infants to 18 years</p>
+                        <p><strong>Services:</strong> Vision screening, amblyopia treatment</p>
+                        <p><strong>Specialties:</strong> Strabismus correction</p>
+                    </div>
+                </div>
+                <div class="service-card p-6 rounded-lg shadow-lg transition-transform transform hover:-translate-y-2">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-sky-500 flex items-center justify-center mr-4">
+                            <i class="fas fa-briefcase-medical text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 dark:text-white">Emergency Eye Care</h3>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">
+                        Prompt evaluation and treatment of eye emergencies, including trauma and sudden vision changes. Our emergency services are available to address urgent eye care needs immediately.
+                    </p>
+                    <div class="text-sm text-sky-600 dark:text-sky-400">
+                        <p><strong>Available:</strong> 24/7 emergency consultation</p>
+                        <p><strong>Conditions:</strong> Eye injuries, sudden vision loss</p>
+                        <p><strong>Response Time:</strong> Immediate assessment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-black mb-4 text-gray-800 dark:text-white">
+                    Our Location
+                </h2>
+                <p class="text-lg md:text-xl text-gray-700 dark:text-gray-300">
+                    Visit us at our state-of-the-art facility, conveniently located to serve you better.
+                </p>
+            </div>
+            <div class="bg-white dark:bg-dark-800 rounded-lg shadow-lg overflow-hidden">
+                <div class="map-container" id="map-container">
+                    <!-- Google Maps Embed -->
+                    <iframe id="google-map-embed" 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.520584393988!2d72.58433931542835!3d23.07904228494241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e835b3a159a2b%3A0x75979a7c39872e19!2s22%2C%20Sadashiv%20Society%2C%20Ranip%2C%20Ahmedabad%2C%20Gujarat%20382480!5e0!3m2!1sen!2sin!4v1629882598542!5m2!1sen!2sin" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <div class="map-overlay">
+                        <div class="flex flex-col items-center">
+                            <p class="text-lg font-semibold text-gray-800 dark:text-white mb-2">Get Directions</p>
+                            <a href="javascript:void(0);" onclick="openDirections()" class="map-direction-btn flex items-center justify-center text-white font-semibold py-2 px-4 rounded-full shadow-md transition-all duration-300">
+                                <i class="fas fa-directions mr-2"></i> Open in Maps
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50 dark:bg-dark-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-black mb-4 text-gray-800 dark:text-white">
+                    Contact Us
+                </h2>
+                <p class="text-lg md:text-xl text-gray-700 dark:text-gray-300">
+                    We would love to hear from you! Get in touch with us for any inquiries or to schedule an appointment.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                <div class="flex flex-col">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-sky-500 flex items-center justify-center mr-4">
+                            <i class="fas fa-map-marker-alt text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <p class="text-lg font-semibold text-gray-800 dark:text-white">Our Address</p>
+                            <p class="text-gray-600 dark:text-gray-400">22, Sadashiv Society, Near Vagitabal Market, Ranip, Ahmedabad, Gujarat 382480</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-sky-500 flex items-center justify-center mr-4">
+                            <i class="fas fa-phone-alt text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <p class="text-lg font-semibold text-gray-800 dark:text-white">Phone</p>
+                            <a href="tel:+919327458102" class="text-gray-600 dark:text-gray-400 hover:text-sky-500 transition-colors duration-300">+91 93274 58102</a>
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-sky-500 flex items-center justify-center mr-4">
+                            <i class="fas fa-clock text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <p class="text-lg font-semibold text-gray-800 dark:text-white">Opening Hours</p>
+                            <p class="text-gray-600 dark:text-gray-400">Mon-Sat: 10:00 AM - 11:00 AM, Evening: 05:00 PM - 06:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-dark-800 rounded-lg shadow-lg p-8">
+                    <h3 class="text-2xl font-display font-bold text-gray-800 dark:text-white mb-6">
+                        Get in Touch
+                    </h3>
+                    <form id="contact-form">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Name</label>
+                                <input type="text" id="name" name="name" required class="block w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none dark:bg-dark-700 dark:border-dark-600 dark:text-white" placeholder="John Doe">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Email</label>
+                                <input type="email" id="email" name="email" required class="block w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none dark:bg-dark-700 dark:border-dark-600 dark:text-white" placeholder="john.doe@example.com">
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Message</label>
+                            <textarea id="message" name="message" rows="4" required class="block w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none dark:bg-dark-700 dark:border-dark-600 dark:text-white" placeholder="Your message..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-glow w-full bg-sky-400 text-white py-4 rounded-xl font-bold text-lg">
+                            <i class="fas fa-paper-plane mr-3"></i>Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Section -->
+    <section id="appointment" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-black mb-4 text-gray-800 dark:text-white">
+                    Book an Appointment
+                </h2>
+                <p class="text-lg md:text-xl text-gray-700 dark:text-gray-300">
+                    Schedule your appointment with us online. We look forward to seeing you!
+                </p>
+            </div>
+            <div class="bg-white dark:bg-dark-800 rounded-lg shadow-lg p-8">
+                <form id="appointment-form">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Name</label>
+                            <input type="text" id="name" name="name" required class="block w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none dark:bg-dark-700 dark:border-dark-600 dark:text-white" placeholder="John Doe">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Phone</label>
+                            <input type="tel" id="phone" name="phone" required class="block w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none dark:bg-dark-700 dark:border-dark-600 dark:text-white" placeholder="+91 93274 58102">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                        <div>
+                            <label for="date" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Date</label>
+                            <input type="date" id="date" name="date" required class="block w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none dark:bg-dark-700 dark:border-dark-600 dark:text-white">
+                        </div>
+                        <div>
+                            <label for="time" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Time</label>
+                            <input type="time" id="time" name="time" required class="block w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none dark:bg-dark-700 dark:border-dark-600 dark:text-white">
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Message</label>
+                        <textarea id="message" name="message" rows="4" class="block w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none dark:bg-dark-700 dark:border-dark-600 dark:text-white" placeholder="Any additional information..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-glow w-full bg-sky-400 text-white py-4 rounded-xl font-bold text-lg">
+                        <i class="fas fa-calendar-plus mr-3"></i>Book Appointment
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="py-16 bg-gray-50 dark:bg-dark-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Hospital Info -->
+                <div class="mb-8 md:mb-0">
+                    <a href="#home" class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-blue-500 to-blue-700 flex items-center justify-center mr-3">
+                            <i class="fas fa-eye text-white text-xl"></i>
+                        </div>
+                        <span class="text-xl font-extrabold text-gray-800 dark:text-white">Shivam Eye Hospital</span>
+                    </a>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">
+                        Your Vision is Our Mission. We provide comprehensive eye care services with the latest technology and experienced doctors.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-600 dark:text-gray-400 hover:text-blue-500 transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-600 dark:text-gray-400 hover:text-blue-500 transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-600 dark:text-gray-400 hover:text-blue-500 transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Our Services -->
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800 dark:text-white mb-4">Our Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#services" class="text-gray-600 dark:text-gray-400 hover:text-blue-500 transition-colors">Comprehensive Eye Exams</a></li>
+                        <li><a href="#services" class="text-gray-600 dark:text-gray-400 hover:text-blue-500 transition-colors">Cataract Surgery</a></li>
+                        <li><a href="#services" class="text-gray-600 dark:text-gray-400 hover:text-blue-500 transition-colors">Laser Eye Surgery</a></li>
+                        <li><a href="#services" class="text-gray-600 dark:text-gray-400 hover:text-blue-500 transition-colors">Glaucoma Management</a></li>
+                        <li><a href="#services" class="text-gray-600 dark:text-gray-400 hover:text-blue-500 transition-colors">Pediatric Eye Care</a></li>
+                        <li><a href="#services" class="text-gray-600 dark:text-gray-400 hover:text-blue-500 transition-colors">Emergency Eye Care</a></li>
+                    </ul>
+                </div>
+
+                <!-- Location Info -->
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800 dark:text-white mb-4">Our Location</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-blue-500 mr-3 mt-1"></i>
+                            <p class="text-gray-600 dark:text-gray-400">
+                                22, Sadashiv Society, Near Vagitabal Market, Ranip, Ahmedabad, Gujarat 382480
+                            </p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-directions text-blue-500 mr-3"></i>
+                            <a href="javascript:void(0);" onclick="openDirections()" class="text-gray-600 dark:text-gray-400 hover:text-blue-500 transition-colors">
+                                Get Directions
+                            </a>
+                        </div>
+                        <div class="flex items-center mt-3">
+                            <a href="#location" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors">
+                                View on Map
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800 dark:text-white mb-4">Contact & Hours</h3>
+                    <div class="space-y-3 mb-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-blue-500 mr-3"></i>
+                            <a href="tel:+919327458102" class="text-gray-600 dark:text-gray-400 hover:text-blue-500 transition-colors">
+                                +91 93274 58102
+                            </a>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-blue-500 mr-3"></i>
+                            <a href="mailto:info@shivameyehospital.com" class="text-gray-600 dark:text-gray-400 hover:text-blue-500 transition-colors">
+                                info@shivameyehospital.com
+                            </a>
+                        </div>
+                    </div>
+                    <h4 class="font-medium text-gray-800 dark:text-white mb-2">Opening Hours:</h4>
+                    <p class="text-gray-600 dark:text-gray-400">Monday - Saturday</p>
+                    <p class="text-gray-600 dark:text-gray-400 mb-1">Morning: 10:00 AM - 11:00 AM</p>
+                    <p class="text-gray-600 dark:text-gray-400">Evening: 05:00 PM - 06:00 PM</p>
+                    <p class="text-gray-600 dark:text-gray-400 mt-2">Sunday: <span class="text-red-500">Closed</span></p>
+                </div>
+            </div>
+
+            <div class="mt-8 pt-8 border-t border-gray-200 dark:border-dark-700">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-600 dark:text-gray-400 text-sm">
+                        &copy; 2025 Shivam Eye Hospital. All rights reserved.
+                    </p>
+                    <div class="flex space-x-4 mt-4 md:mt-0">
+                        <a href="#" class="text-gray-600 dark:text-gray-400 hover:text-blue-500 transition-colors text-sm">Privacy Policy</a>
+                        <a href="#" class="text-gray-600 dark:text-gray-400 hover:text-blue-500 transition-colors text-sm">Terms of Service</a>
+                        <a href="#appointment" class="text-gray-600 dark:text-gray-400 hover:text-blue-500 transition-colors text-sm">Book Appointment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <a href="tel:+919327458102" class="floating-btn phone-btn bg-sky-500 hover:bg-sky-600">
+        <i class="fas fa-phone text-xl"></i>
+    </a>
+
+    <!-- Ask Netra Chatbot Button -->
+    <div class="netra-chatbot" onclick="openNetraChat()">
+        <div class="netra-icon">
+            <i class="fas fa-robot"></i>
+        </div>
+        <div class="netra-pulse"></div>
+    </div>
+
+    <!-- Full Screen Map Modal -->
+    <div id="fullscreen-map-modal" class="fixed inset-0 bg-black bg-opacity-75 z-50 hidden flex items-center justify-center p-4">
+        <div class="relative w-full h-full max-w-6xl max-h-6xl bg-white rounded-lg overflow-hidden">
+            <button onclick="closeFullScreenMap()" class="absolute top-4 right-4 z-10 bg-white text-gray-800 rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-100 transition-colors">
+                <i class="fas fa-times"></i>
+            </button>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.520584393988!2d72.58433931542835!3d23.07904228494241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e835b3a159a2b%3A0x75979a7c39872e19!2s22%2C%20Sadashiv%20Society%2C%20Ranip%2C%20Ahmedabad%2C%20Gujarat%20382480!5e0!3m2!1sen!2sin!4v1629882598542!5m2!1sen!2sin"
+                class="w-full h-full border-0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+
+    <script>
+        // Function to open Google Maps directions
+        function openDirections() {
+            const address = "22, Sadashiv Society, Near Vagitabal Market, Ranip, Ahmedabad, Gujarat 382480";
+            const encodedAddress = encodeURIComponent(address);
+            const mapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodedAddress}`;
+            window.open(mapsUrl, '_blank');
+        }
+
+        function closeFullScreenMap() {
+            const modal = document.getElementById('fullscreen-map-modal');
+            if (modal) {
+                modal.classList.add('hidden');
+            }
+        }
+
+        function openFullScreenMap() {
+            const modal = document.getElementById('fullscreen-map-modal');
+            if (modal) {
+                modal.classList.remove('hidden');
+            }
+        }
+
+        // Function to open Ask Netra chatbot
+        function openNetraChat() {
+            // Open the Ask Netra chatbot in a new window
+            const chatWindow = window.open(
+                'ask-netra.html', 
+                'netraChat', 
+                'width=500,height=700,resizable=yes,scrollbars=yes,toolbar=no,menubar=no,location=no,status=no'
+            );
+            
+            // Focus on the new window
+            if (chatWindow) {
+                chatWindow.focus();
+            }
+        }
+
+        // Logo Animation Manager
+        class LogoManager {
+            constructor() {
+                this.logoElement = document.getElementById('websiteLogo');
+                this.init();
+            }
+
+            init() {
+                // Hide logo after 3 seconds
+                setTimeout(() => {
+                    this.hideLogo();
+                }, 3000);
+            }
+
+            hideLogo() {
+                if (this.logoElement) {
+                    this.logoElement.classList.add('hidden');
+                    // Remove from DOM after transition
+                    setTimeout(() => {
+                        if (this.logoElement) {
+                           this.logoElement.remove();
+                        }
+                    }, 1000);
+                }
+            }
+        }
+
+        // Theme Management - Fixed implementation
+        class ThemeManager {
+            constructor() {
+                this.themeToggle = document.getElementById('theme-toggle');
+                this.lightIcon = document.getElementById('theme-icon-light');
+                this.darkIcon = document.getElementById('theme-icon-dark');
+                this.html = document.documentElement;
+                this.init();
+            }
+
+            init() {
+                // Check for saved theme preference or use the system preference
+                const savedTheme = localStorage.getItem('theme');
+                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                
+                // Apply the saved theme or system preference
+                if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+                    this.setTheme('dark');
+                } else {
+                    this.setTheme('light');
+                }
+                
+                // Listen for button clicks
+                if (this.themeToggle) {
+                    this.themeToggle.addEventListener('click', () => this.toggleTheme());
+                }
+                
+                // Listen for system preference changes
+                window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+                    if (!localStorage.getItem('theme')) {
+                        this.setTheme(e.matches ? 'dark' : 'light');
+                    }
+                });
+            }
+
+            setTheme(theme) {
+                if (theme === 'dark') {
+                    this.html.classList.add('dark');
+                } else {
+                    this.html.classList.remove('dark');
+                }
+                
+                localStorage.setItem('theme', theme);
+                this.updateIcons();
+            }
+
+            toggleTheme() {
+                const isDark = this.html.classList.contains('dark');
+                this.setTheme(isDark ? 'light' : 'dark');
+            }
+
+            updateIcons() {
+                const isDark = this.html.classList.contains('dark');
+                
+                if (this.lightIcon && this.darkIcon) {
+                    if (isDark) {
+                        this.lightIcon.classList.add('hidden');
+                        this.darkIcon.classList.remove('hidden');
+                    } else {
+                        this.lightIcon.classList.remove('hidden');
+                        this.darkIcon.classList.add('hidden');
+                    }
+                }
+            }
+        }
+
+        // Mobile Menu Manager - Enhanced for better responsiveness
+        class MobileMenuManager {
+            constructor() {
+                this.toggleButton = document.getElementById('mobile-menu-toggle');
+                this.closeButton = document.getElementById('mobile-menu-close');
+                this.mobileMenu = document.getElementById('mobile-menu');
+                this.navLinks = document.querySelectorAll('#mobile-menu .nav-link');
+                this.init();
+            }
+
+            init() {
+                if (this.toggleButton) {
+                    this.toggleButton.addEventListener('click', () => this.toggle());
+                }
+                
+                if (this.closeButton) {
+                    this.closeButton.addEventListener('click', () => this.close());
+                }
+                
+                this.navLinks.forEach(link => {
+                    link.addEventListener('click', () => this.close());
+                });
+                
+                // Close menu when clicking outside
+                document.addEventListener('click', (e) => {
+                    if (this.mobileMenu && 
+                        !this.mobileMenu.classList.contains('hidden') && 
+                        !this.mobileMenu.contains(e.target) && 
+                        this.toggleButton && 
+                        !this.toggleButton.contains(e.target)) {
+                        this.close();
+                    }
+                });
+                
+                // Handle window resize
+                window.addEventListener('resize', () => {
+                    if (window.innerWidth >= 1024 && this.mobileMenu && !this.mobileMenu.classList.contains('hidden')) {
+                        this.close();
+                    }
+                });
+            }
+
+            toggle() {
+                if (this.mobileMenu) {
+                    this.mobileMenu.classList.toggle('hidden');
+                }
+            }
+
+            close() {
+                if (this.mobileMenu) {
+                    this.mobileMenu.classList.add('hidden');
+                }
+            }
+        }
+
+        // Smooth Scrolling Manager
+        class SmoothScrollManager {
+            constructor() {
+                this.init();
+            }
+
+            init() {
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                    anchor.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const target = document.querySelector(anchor.getAttribute('href'));
+                        if (target) {
+                            // Add offset for fixed navbar
+                            const navHeight = document.querySelector('nav').offsetHeight;
+                            const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navHeight;
+                            
+                            window.scrollTo({
+                                top: targetPosition,
+                                behavior: 'smooth'
+                            });
+                        }
+                    });
+                });
+            }
+        }
+
+        // Form Manager
+        class FormManager {
+            constructor() {
+                this.init();
+            }
+
+            init() {
+                const appointmentForm = document.getElementById('appointment-form');
+                if (appointmentForm) {
+                    appointmentForm.addEventListener('submit', (e) => this.handleSubmit(e, 'Appointment request submitted successfully!'));
+                }
+
+                const contactForm = document.getElementById('contact-form');
+                if (contactForm) {
+                    contactForm.addEventListener('submit', (e) => this.handleSubmit(e, 'Message sent successfully!'));
+                }
+
+                // Set minimum date to today
+                const dateInput = document.getElementById('date');
+                if (dateInput) {
+                    dateInput.min = new Date().toISOString().split('T')[0];
+                }
+            }
+
+            handleSubmit(e, successMessage) {
+                e.preventDefault();
+                
+                const form = e.target;
+                const button = form.querySelector('button[type="submit"]');
+                const originalHTML = button.innerHTML;
+                
+                button.innerHTML = '<i class="fas fa-spinner animate-spin mr-3"></i> Sending...';
+                button.disabled = true;
+                
+                setTimeout(() => {
+                    button.innerHTML = '<i class="fas fa-check mr-3"></i> ' + successMessage;
+                    button.classList.add('bg-green-500');
+                    
+                    setTimeout(() => {
+                        button.innerHTML = originalHTML;
+                        button.classList.remove('bg-green-500');
+                        button.disabled = false;
+                        form.reset();
+                    }, 2000);
+                }, 1500);
+            }
+        }
+
+        // Location Manager - New class to manage location related functionality
+        class LocationManager {
+            constructor() {
+                this.mapContainer = document.getElementById('map-container');
+                this.init();
+            }
+            
+            init() {
+                // Add click event to view map in full screen
+                const mapElement = document.querySelector('#map-container iframe');
+                if (mapElement && this.mapContainer) {
+                    this.mapContainer.addEventListener('click', (e) => {
+                        // Prevent click on overlay buttons from opening fullscreen
+                        if (!e.target.closest('.map-overlay')) {
+                            openFullScreenMap();
+                        }
+                    });
+                }
+                
+                // Add event listener for location links
+                document.querySelectorAll('a[href="#location"]').forEach(link => {
+                    link.addEventListener('click', () => {
+                        setTimeout(() => {
+                            // Highlight the location section briefly
+                            const locationSection = document.getElementById('location');
+                            if (locationSection) {
+                                locationSection.classList.add('pulse-highlight');
+                                setTimeout(() => {
+                                    locationSection.classList.remove('pulse-highlight');
+                                }, 1500);
+                            }
+                        }, 800);
+                    });
+                });
+            }
+        }
+
+        // Website Manager - Main controller class
+        class WebsiteManager {
+            constructor() {
+                document.addEventListener('DOMContentLoaded', () => {
+                    try {
+                        this.initialize();
+                    } catch (error) {
+                        console.error('Error initializing website:', error);
+                        this.fallbackInitialization();
+                    }
+                });
+            }
+            
+            initialize() {
+                this.logoManager = new LogoManager();
+                this.themeManager = new ThemeManager();
+                this.mobileManager = new MobileMenuManager();
+                this.scrollManager = new SmoothScrollManager();
+                this.formManager = new FormManager();
+                this.locationManager = new LocationManager();
+                
+                console.log('Website initialized successfully');
+            }
+            
+            fallbackInitialization() {
+                console.warn('Using fallback initialization');
+                
+                // Basic theme toggle
+                const themeToggle = document.getElementById('theme-toggle');
+                if (themeToggle) {
+                    themeToggle.addEventListener('click', () => {
+                        document.documentElement.classList.toggle('dark');
+                        localStorage.setItem('theme', 
+                            document.documentElement.classList.contains('dark') ? 'dark' : 'light'
+                        );
+                    });
+                }
+                
+                // Apply saved theme
+                if (localStorage.getItem('theme') === 'dark' || 
+                    (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                    document.documentElement.classList.add('dark');
+                }
+                
+                // Basic mobile menu
+                const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (mobileMenuToggle && mobileMenu) {
+                    mobileMenuToggle.addEventListener('click', () => {
+                        mobileMenu.classList.toggle('hidden');
+                    });
+                }
+                
+                // Basic smooth scrolling
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                    anchor.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        const target = document.querySelector(this.getAttribute('href'));
+                        if (target) {
+                            window.scrollTo({
+                                top: target.offsetTop - 80,
+                                behavior: 'smooth'
+                            });
+                        }
+                    });
+                });
+            }
+        }
+
+        // Initialize the website
+        new WebsiteManager();
+    </script>
+
+    <style>
+        /* Additional styles for improved color accuracy and responsiveness */
+        .pulse-highlight {
+            animation: pulseHighlight 1.5s ease-in-out;
+        }
+        
+        @keyframes pulseHighlight {
+            0%, 100% {
+                background-color: transparent;
+            }
+            50% {
+                background-color: rgba(59, 130, 246, 0.1);
+            }
+        }
+        
+        /* Improved dark mode colors */
+        .dark .bg-dark-800 {
+            background-color: #1a2234;
+        }
+        
+        .dark .bg-dark-900 {
+            background-color: #111827;
+        }
+        
+        /* Better contrast for text */
+        .dark .text-gray-300 {
+            color: #d1d5db;
+        }
+        
+        .dark .text-gray-400 {
+            color: #9ca3af;
+        }
+        
+        /* Enhanced mobile responsiveness */
+        @media (max-width: 768px) {
+            .grid {
+                grid-gap: 1.5rem;
+            }
+            
+            h2 {
+                font-size: 1.875rem !important;
+            }
+            
+            .py-32 {
+                padding-top: 4rem !important;
+                padding-bottom: 4rem !important;
+            }
+            
+            .floating-btn {
+                width: 50px;
+                height: 50px;
+            }
+            
+            .netra-chatbot {
+                width: 50px;
+                height: 50px;
+                bottom: 90px;
+            }
+        }
+        
+        /* Fix for map container responsive */
+        .map-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%;
+        }
+        
+        .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .map-overlay {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background-color: white;
+            padding: 10px 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 5;
+        }
+        
+        .dark .map-overlay {
+            background-color: #1a2234;
+        }
+    </style>
+</body>
+</html>
